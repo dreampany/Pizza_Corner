@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.juhi_gupta.pizza_corner.Menu_Page_Activity">
+
+    <TextView
+        android:id="@+id/our_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Our Menu"
+        android:textAllCaps="true"
+        android:textColor="#32127A"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cheeze_burst"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cheeze_burst"
+        android:layout_below="@+id/our_menu" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:text="Click For Home Delivery"
+        android:onClick="home_page"
+        android:textStyle="bold"
+        android:layout_marginBottom="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/cheeze_burst_pizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button"
+        android:layout_alignRight="@+id/button"
+        android:layout_below="@+id/our_menu"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="13dp"
+        android:text="\u25CF  Cheeze Burst"
+        android:textColor="#32127A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/option_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cheeze_burst_pizza"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/cheeze_burst_pizza"
+        android:layout_below="@+id/cheeze_burst_pizza"
+        android:layout_marginTop="10dp"
+        android:text="Crust with yummy liquid cheese filled inside."
+        android:textColor="#0000FF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cheeze_burst"
+        android:layout_alignLeft="@+id/option_1"
+        android:layout_alignStart="@+id/option_1"
+        android:text="Rs 100"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/mexican_green_wave"
+        android:layout_below="@+id/cheeze_burst"
+        android:layout_alignLeft="@+id/cheeze_burst"
+        android:layout_alignStart="@+id/cheeze_burst"
+        android:layout_marginTop="26dp"
+        android:id="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/veg_extravaganja"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginTop="24dp"
+        android:id="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/discount_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price_one"
+        android:layout_alignBottom="@+id/price_one"
+        android:layout_toEndOf="@+id/our_menu"
+        android:layout_toRightOf="@+id/our_menu"
+        android:text="20% discount"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/option_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price_one"
+        android:layout_alignStart="@+id/price_one"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginTop="13dp"
+        android:text="\u25CF  Mexican Wave"
+        android:textColor="#32127A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/description_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option_two"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/option_two"
+        android:layout_below="@+id/option_two"
+        android:layout_marginTop="14dp"
+        android:text="A pizza loaded with crunchy onions with Mexican herbs."
+        android:textColor="#0000FF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView3"
+        android:layout_alignLeft="@+id/description_two"
+        android:layout_alignStart="@+id/description_two"
+        android:text="Rs 150"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/discount_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price_two"
+        android:layout_alignBottom="@+id/price_two"
+        android:layout_alignLeft="@+id/discount_three"
+        android:layout_alignStart="@+id/discount_three"
+        android:text="10% discount"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/option_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price_two"
+        android:layout_alignStart="@+id/price_two"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_marginTop="10dp"
+        android:text="\u25CF  Extravaganja"
+        android:textColor="#32127A"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/option_three"
+        android:layout_alignStart="@+id/option_three"
+        android:layout_below="@+id/option_three"
+        android:layout_marginTop="16dp"
+        android:text=" An overload of golden corn, exotic black olives with extra cheese"
+        android:textColor="#0000FF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/imageView3"
+        android:text="Rs 180"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/discount_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/price_three"
+        android:layout_alignBottom="@+id/price_three"
+        android:layout_toEndOf="@+id/our_menu"
+        android:layout_toRightOf="@+id/our_menu"
+        android:text="15% discount"
+        android:textColor="#228B22"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignLeft="@+id/imageView3"
+        android:layout_alignStart="@+id/imageView3"
+        android:background="#ffff00"
+        android:onClick="back"
+        android:text="Back"
+        android:textStyle="bold" />
+</RelativeLayout>

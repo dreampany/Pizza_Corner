@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images_1"
+    tools:context="com.example.juhi_gupta.pizza_corner.MainActivity">
+
+    <TextView
+        android:id="@+id/pizza_corner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Pizza Corner"
+        android:textAllCaps="true"
+        android:textColor="#228B22"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/contact_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mobile_number"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="46dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:text="Contact Details :"
+        android:textAllCaps="true"
+        android:textColor="#228B22"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/mobile_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="976543712"
+        android:textColor="#0000ff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/contact_details"
+        android:layout_alignStart="@+id/contact_details"
+        android:layout_marginTop="68dp" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="07, Halwasiya Marg, Hazaratganj, Lucknow "
+        android:textColor="#0000ff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/mobile_number"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/mobile_number"
+        android:layout_alignStart="@+id/mobile_number" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Making way for a hearty pizza is Pizza Corner , A Unit Of Juhi Foods in Lucknow. Established in the year 2001, this place is synonymous with delicious food that can satiate all your pizza cravings."
+        android:textColor="#0000ff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/pizza_corner"
+        android:layout_marginTop="32dp"
+        android:layout_alignLeft="@+id/contact_details"
+        android:layout_alignStart="@+id/contact_details" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:text="Menu"
+        android:onClick="menu_page"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+</RelativeLayout>

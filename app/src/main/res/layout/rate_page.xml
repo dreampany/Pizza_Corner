@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/star"
+    tools:context="com.example.juhi_gupta.pizza_corner.Rate_Us_Activity">
+
+
+    <TextView
+        android:id="@+id/rateUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Rate Us"
+        android:textAllCaps="true"
+        android:textColor="#ff69b4"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rateUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:isIndicator="false"
+        android:numStars="3"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:background="#ff69b4"
+        android:textStyle="bold"
+        android:onClick="home_navigation"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/submitStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp"
+        android:background="#ff69b4"
+        android:onClick="onSubmit"
+        android:text="Submit Stars"
+        android:textStyle="bold|italic" />
+</RelativeLayout>
